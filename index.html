@@ -1,0 +1,146 @@
+<!doctype html>
+<html>
+
+<head>
+    <style>
+
+
+
+        :root {
+            /*put variables here*/
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            Box-sizing: border-box;
+            font-family: 'Almendra', serif;
+        }
+        body {
+            background:lightgray;
+        }
+        header {
+            padding: 2rem;
+            text-align: center;
+        }
+        nav {
+            background: black;
+            color: white;
+        }
+        footer {
+            background: black;
+            color: white;
+            padding: 3rem;
+            min-height: 10vh;
+        }
+        .container {
+            background: burlywood;
+            padding: 1rem;
+            min-height: 60vh;
+            width: 80%;
+            margin: auto;
+        }
+        .section-header {
+            padding: 1.25rem;
+            font-size: 1.75rem;
+            border-bottom: 1px lightgray solid;
+        }
+        .section-container {
+            display: flex;
+            flex-disrection: row;
+            flex-wrap: wrap; 
+            justify-content: flex-start;
+            align-items: strech;
+            padding: 1.25rem;
+        }
+        .section-item {
+            flex: 0 0 30%;
+            border: 1px lightgray solid;
+            border-radius: 12px;
+            text-align: center;
+            background: white;
+            box-shadow: 10px 5px 5px 0px rgba(0,0,0,0.25);
+        }
+        .section-item:hover {
+            border: 3px yellow solid;
+            box-shadow: 16px 8px 8px 0px rgba(0,0,0,0.25);
+            background: lightyellow;
+        }
+        .section-item a {
+            color: black;
+            text-decoration: none;
+        }
+        .section-icon {
+            padding: 1rem;
+        }
+        .section-icon i {
+            font-size: 20vh;
+        }
+        .section-item h4 {
+            background-color: lightgray;
+            padding: 1rem;
+            font-size: 1.75rem;
+        }
+        .section-item p {
+            padding: 1rem;
+            font-size: 1.15rem;
+            line-height: 2rem;
+        }
+
+        @media only screen and (max-width: 800px) {
+            .container {
+                background: darkred;
+                color: white;
+                width: 100%;
+            }
+            .section-container {
+                flex-direction: column;
+                justify-content: center;
+            }
+            .section-item {
+                flex-basis: 92%;
+            }
+        }
+
+
+
+
+    </style>
+
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+    <title>PAGE TITLE</title>
+</head>
+<body>
+
+    <header>
+        Header
+    </header>
+
+    <nav>
+         Nav section
+    </nav>
+    <div class="container">
+        <!-- Put assignment specific code here -->
+        <h3 class="section-header">getting started</h3>
+        <div class="section-container">
+
+            <div class="section-item">
+            <a href="skeleton.html" target="_blank">
+                 <div class="section-icon">
+                        <i class="fas fa-x-ray"></i>
+                 </div>
+                <h4>The HTML skeleton</h4>
+                <p>
+                     The skeleton is the set of Tags
+                     required for every HTML document.
+                 </p>
+             </a>
+        </div><!-- End of section item-->
+
+
+    </div><!-- End of the container -->
+    <Footer>
+        Footer
+    </Footer>
+
+</body>
+</html>
